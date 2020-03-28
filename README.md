@@ -31,3 +31,7 @@ Observação: o [Git](https://git-scm.com/downloads), [Java Development Kit 8](h
 4. Vai aparecer um pequeno modal com algumas opções. Selecione a opção Java Application e clique no botão OK.
 
 Agora em diante, todo momento que você quiser iniciar o programa, só apertar o botão verde.
+
+## Documentação 
+
+A documentação foi gerada de forma automatica pela ferramenta Javadoc e para a visualização da documentação, é necessario abrir o arquivo index.html que está presente dentro da pasta documentação, nos arquivos do projeto.
