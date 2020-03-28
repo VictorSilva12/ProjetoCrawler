@@ -1,3 +1,10 @@
+/**
+ * A Classe App e uma classe criada para fornecer um menu
+ * e para a exibição de informações.
+ *
+ * @author (Victor Silva)
+ * @version (1)
+ */
 package com.victor.silva.crawler;
 
 import javax.swing.JOptionPane;
@@ -6,8 +13,14 @@ import javax.swing.JScrollPane;
 
 public class App
 {
+    /**
+     * Metodo Principal, onde e apresentado o menu onde o usuario pode inserir
+     * a url do produto que ele deseja extrair as informacoes.
+     * @param args
+     */
     public static void main( String[] args )
     {
+
         int op=0;
         do{
 
@@ -18,20 +31,19 @@ public class App
                     try {
                         Crawler teste = new Crawler();
                         Item produto = teste.ProcurarElemento(URL);
-                        System.out.println(produto.toString());
 
                         JTextArea areaTexto = new JTextArea(30, 70);
                         areaTexto.setText("\n" + produto.toString());
 
                         areaTexto.setWrapStyleWord(true);
                         areaTexto.setLineWrap(true);
-                        
                         areaTexto.setCaretPosition(0);
                         areaTexto.setEditable(false);
 
                         JScrollPane janela = new JScrollPane(areaTexto);
                         JOptionPane.showMessageDialog(null, janela);
                     } catch (Exception e) {
+                        System.out.println(e);
                         JOptionPane.showMessageDialog(null, "URL invalida");
                     }
                 }else {
