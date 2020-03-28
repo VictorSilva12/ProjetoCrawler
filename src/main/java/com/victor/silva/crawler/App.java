@@ -25,7 +25,7 @@ public class App
 
                         areaTexto.setWrapStyleWord(true);
                         areaTexto.setLineWrap(true);
-                        //pesquisar o que faz
+                        
                         areaTexto.setCaretPosition(0);
                         areaTexto.setEditable(false);
 
